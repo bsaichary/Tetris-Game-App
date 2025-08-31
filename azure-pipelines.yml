@@ -13,6 +13,8 @@ variables:
   tag: '$(Build.BuildId)'
 
   azureSubscription: '3efcbae4-be1e-4d16-92c4-119f7fd7fa6a'
+  appServiceName: 'tetriswebapp'
+  resourceGroupName: 'tetrisrg'
 
 pool: 
   name: gandiagent
