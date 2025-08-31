@@ -15,7 +15,7 @@ variables:
 pool: 
   name: gandiagent
   demands:  
-    - myagent -equals tetrisappvm
+    - agent.name -equals tetrisappvm
 
 stages:
 - stage: Build
@@ -26,7 +26,7 @@ stages:
     pool: 
       name: gandiagent
       demands:  
-      - myagent -equals tetrisappvm
+        - agent.name -equals tetrisappvm
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
